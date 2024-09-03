@@ -1,4 +1,117 @@
-1. //Swapping 2 Numbers//
+1. WAP TO DISPLAY FACTORIAL 1 TO 10 NUMBERS
+
+public class Factorial {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 10; i++) {
+            int factorial = 1;
+            for (int j = 1; j <= i; j++) {
+                factorial *= j;
+            }
+            System.out.println("Factorial of " + i + " = " + factorial);
+        }
+    }
+}
+---------------------------------------------------------------------------------------------------------
+2. WAP TO DISPLAY ADDITION 1 TO 100 NUMBERS
+
+public class Addition {
+    public static void main(String[] args) {
+        int sum = 0;
+        for (int i = 1; i <= 100; i++) {
+            sum += i;
+        }
+        System.out.println("Sum = " + sum);
+    }
+}
+----------------------------------------------------------------------------------------------------
+3. WAP TO FIND THE FACTORIAL OF NUMBER USING LOOP
+
+import java.util.Scanner;
+
+public class Factorial {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = scanner.nextInt();
+        int factorial = 1;
+        for (int i = 1; i <= num; i++) {
+            factorial *= i;
+        }
+        System.out.println("Factorial = " + factorial);
+    }
+}
+--------------------------------------------------------------------------------------------
+4. WAP TO ACCEPT 1 NUMBER AND DISPLAY WHETHER IT IS PRIME OR NOT
+
+import java.util.Scanner;
+
+public class Prime {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = scanner.nextInt();
+        if (isPrime(num)) {
+            System.out.println(num + " is prime");
+        } else {
+            System.out.println(num + " is not prime");
+        }
+    }
+
+    public static boolean isPrime(int num) {
+        if (num <= 1) return false;
+        for (int i = 2; i < num; i++) {
+            if (num % i == 0) return false;
+        }
+        return true;
+    }
+}
+-------------------------------------------------------------------------------------------------------------
+5. WAP TO ACCEPT 1 NUMBER FROM THE USER AND CHECK IT WHETHER IT IS EVEN OR ODD
+
+
+import java.util.Scanner;
+
+public class EvenOrOdd {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = scanner.nextInt();
+        if (num % 2 == 0) {
+            System.out.println(num + " is even");
+        } else {
+            System.out.println(num + " is odd");
+        }
+    }
+}
+----------------------------------------------------------------------------------------------
+6. WAP TO DISPLAY EVEN NUMBERS FROM 1 TO 100
+
+
+public class EvenNumbers {
+    public static void main(String[] args) {
+        for (int i = 2; i <= 100; i += 2) {
+            System.out.print(i + " ");
+        }
+    }
+}
+------------------------------------------------------------------------------------------
+7. WAP TO ACCEPT 1 NUMBER AND DISPLAY ITS TABLE
+
+import java.util.Scanner;
+
+public class Table {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = scanner.nextInt();
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(num + " x " + i + " = " + num * i);
+        }
+    }
+}
+
+--------------------------------------------------------------------------------------------
+//Swapping 2 Numbers//
 
 public class swapping{
     public static void main(String[] args){
@@ -11,9 +124,9 @@ public class swapping{
         System.out.println("After Swapping: a = " + a +", b = " +b);
     }
 }
+---------------------------------------------------------------------------------------------
 
-
-2.//Calculator//
+//Calculator//
 
 
 import java.util.Scanner;
@@ -57,8 +170,8 @@ public class practice {
 
 }  
 }    
-
-3. // Factorial //
+---------------------------------------------------------------------------------------------
+// Factorial //
 
 public class factorial{
     public static void main(String[] args) {
@@ -70,8 +183,8 @@ public class factorial{
         System.out.println("Factorial of " + a + " is " + factorial);
     }
 }    
-    
-4. // For Loop //
+-----------------------------------------------------------------------------------------------    
+ // For Loop //
 
     import java.util.Scanner;
 
@@ -92,14 +205,11 @@ public class conditions {
         }
     }    
 }
-
-4. // odd even //
+---------------------------------------------------------------------------------------------
+ // odd even //
 
     import java.util.Scanner;
 
-/**
- * oddeven
- */
 public class oddeven {
 
     public static void main(String[] args) {
